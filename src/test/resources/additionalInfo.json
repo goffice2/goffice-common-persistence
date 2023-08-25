@@ -1,0 +1,16 @@
+{
+	"tenants":{
+		"bolzano":{
+			"keycloakName":"Bolzano",
+			"belfiore":"belfioreBolzano",
+			"istat":"istatBolzano",
+			"dbSchema":"dbSchemaBolzano",
+			"additionalInfo":{
+				"net.gvcc.goffice.multitenancy.DMSTenantInfo":{
+					"prop1":"1",
+					"prop2":"2"
+				}
+			}
+		}
+	}
+}

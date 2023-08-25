@@ -1,0 +1,145 @@
+{
+	"tenants": {
+		"bolzano": {
+			"keycloak": "Bolzano",
+			"belfiore": "A952",
+			"istat": "21111",
+			"dbSchema": "bolzano",
+			"codCatastale": "A952",
+			"ipaAoo": "c_a952",
+			"additionalInfo": {
+				"net.gvcc.goffice.service.documentmanagement.d3Proxy.D3ProxyTenantInfo": {
+					"dmsUrl": "https://docs.gvcc.net/",
+					"dmsRepository": "bcaffa83-006b-51c3-8808-751dfda70543",
+					"userMappings": {
+						"service-account-goffice-service-security": "goffice2system"
+					}
+				},
+				"net.gvcc.goffice.multitenancy.config.dbms.DbmsTenantCatalog": [
+					{
+						"name": "h2-test-1",
+						"owner": "goffice-common-persistence",
+						"url": "jdbc:h2:mem:test-1",
+						"username": "sa",
+						"password": "",
+						"driverClassName": "org.h2.Driver",
+						"sqlDialect": "org.hibernate.dialect.H2Dialect"
+					},
+					{
+						"name": "h2-test-2",
+						"owner": "goffice-connector-elixforms",
+						"url": "jdbc:h2:mem:test-2",
+						"username": "sa",
+						"password": "",
+						"driverClassName": "org.h2.Driver",
+						"sqlDialect": "org.hibernate.dialect.H2Dialect"
+					}
+				]
+			}
+		},
+		"abtei": {
+			"keycloak": "Abtei",
+			"belfiore": "belfioreAbtei",
+			"istat": "21006",
+			"dbSchema": "abtei",
+			"codCatastale": "A537",
+			"ipaAoo": "c_a537",
+			"additionalInfo": {
+				"net.gvcc.goffice.service.documentmanagement.d3Proxy.D3ProxyTenantInfo": {
+					"dmsUrl": "https://docs.gvcc.net/",
+					"dmsRepository": "bcaffa83-006b-51c3-8808-751dfda70543",
+					"userMappings": {
+						"service-account-goffice-service-security": "goffice2system"
+					}
+				},
+				"net.gvcc.goffice.multitenancy.config.dbms.DbmsTenantCatalog": [
+					{
+						"name": "h2-test-3",
+						"owner": "goffice-common-persistence",
+						"url": "jdbc:h2:mem:test-3",
+						"username": "sa",
+						"password": "",
+						"driverClassName": "org.h2.Driver",
+						"sqlDialect": "org.hibernate.dialect.H2Dialect"
+					},
+					{
+						"name": "h2-test-3-by-selector",
+						"owner": "goffice-connector-goffice1",
+						"main" : true,
+						"url": "jdbc:h2:mem:test-5",
+						"username": "sa",
+						"password": "",
+						"driverClassName": "org.h2.Driver",
+						"sqlDialect": "org.hibernate.dialect.H2Dialect"
+					},
+					{
+						"owner": "goffice-connector-goffice1",
+						"url": "jdbc:h2:mem:test-6",
+						"username": "sa",
+						"password": "",
+						"driverClassName": "org.h2.Driver",
+						"sqlDialect": "org.hibernate.dialect.H2Dialect"
+					},
+					
+					{
+						"main" : true,
+						"name": "h2-test-4",
+						"owner": "goffice-connector-elixforms",
+						"url": "jdbc:h2:mem:test-4",
+						"username": "sa",
+						"password": "",
+						"driverClassName": "org.h2.Driver",
+						"sqlDialect": "org.hibernate.dialect.H2Dialect"
+					},
+					{
+						"name": "h2-test-4-secondo",
+						"owner": "goffice-connector-elixforms",
+						"url": "jdbc:h2:mem:test-4",
+						"username": "sa",
+						"password": "",
+						"driverClassName": "org.h2.Driver",
+						"sqlDialect": "org.hibernate.dialect.H2Dialect"
+					},
+					
+					{
+						"name": "h2-test-4",
+						"owner": "goffice-connector-infocamere",
+						"url": "jdbc:h2:mem:test-4",
+						"main" : true,
+						"username": "sa",
+						"password": "",
+						"driverClassName": "org.h2.Driver",
+						"sqlDialect": "org.hibernate.dialect.H2Dialect"
+					},
+					{
+						"name": "h2-test-4-secondo",
+						"owner": "goffice-connector-infocamere",
+						"url": "jdbc:h2:mem:test-4",
+						"username": "sa",
+						"password": "",
+						"driverClassName": "org.h2.Driver",
+						"sqlDialect": "org.hibernate.dialect.H2Dialect"
+					}
+				]
+			}
+		},
+		"sgv": {
+			"keycloak": "sgv",
+			"belfiore": "belfioreAbtei",
+			"istat": "istatAbtei",
+			"dbSchema": "PUBLIC",
+			"additionalInfo": {
+				"net.gvcc.goffice.multitenancy.config.dbms.DbmsTenantCatalog": [
+					{
+						"name": "fake-db",
+						"url": "jdbc:h2:mem:fake",
+						"username": "sa",
+						"password": "",
+						"driverClassName": "org.h2.Driver",
+						"sqlDialect": "org.hibernate.dialect.H2Dialect"
+					}
+				]
+			}
+		}
+	}
+}
