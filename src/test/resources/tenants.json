@@ -8,13 +8,6 @@
 			"codCatastale": "A952",
 			"ipaAoo": "c_a952",
 			"additionalInfo": {
-				"net.gvcc.goffice.service.documentmanagement.d3Proxy.D3ProxyTenantInfo": {
-					"dmsUrl": "https://docs.gvcc.net/",
-					"dmsRepository": "bcaffa83-006b-51c3-8808-751dfda70543",
-					"userMappings": {
-						"service-account-goffice-service-security": "goffice2system"
-					}
-				},
 				"net.gvcc.goffice.multitenancy.config.dbms.DbmsTenantCatalog": [
 					{
 						"name": "h2-test-1",
@@ -46,10 +39,10 @@
 			"ipaAoo": "c_a537",
 			"additionalInfo": {
 				"net.gvcc.goffice.service.documentmanagement.d3Proxy.D3ProxyTenantInfo": {
-					"dmsUrl": "https://docs.gvcc.net/",
-					"dmsRepository": "bcaffa83-006b-51c3-8808-751dfda70543",
+					"dmsUrl": "https://myurl.com/",
+					"dmsRepository": "myrepo",
 					"userMappings": {
-						"service-account-goffice-service-security": "goffice2system"
+						"service-account-goffice-service-security": "serviceaccount"
 					}
 				},
 				"net.gvcc.goffice.multitenancy.config.dbms.DbmsTenantCatalog": [
